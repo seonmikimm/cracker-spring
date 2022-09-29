@@ -1,32 +1,33 @@
-# 1. 프로젝트 소개
+# Crackers(Spring Boot)
+## 1. 프로젝트 소개
 - 주제: 맛집 정보를 공유하고 의견을 나눌 수 있는 커뮤니티 서비스
 - 개발 기간: 2022.06.27~2022.07.29
 - 참여 인원: 5명
 - 역할: 팀원
 - http://crackers.life
 
-# 2. 사용 기술
+## 2. 사용 기술
 - Backend : Java 11 Spring Boot 2.6.9 Gradle 7.4.1 Thymeleaf Spring Data JPA Spring Security
 - Frontend : HTML JavaScript CSS JQuery
 - AWS : S3 EC2 Secret Manager CodeDeploy
 - Database : AWS RDS MySQL 8.0.28
 - CI/CD : Github Action
 
-# 3. 맡은 기능
+## 3. 맡은 기능
 ### 대표 기능 : 프로필 CRUD (프로필 페이지, 북마커 기능)
 - Spring data JPA를 활용한 DB 업데이트 구현
 - AWS S3 Service 를 통한 이미지 업로드 구현
 - 파일 경로(이미지 URL) DB 저장하여 관리
 - Dto를 활용하여 유지보수성 증가
 
-# 4. 어려웠던 점
+## 4. 어려웠던 점
 ### 이미지 파일 전송 및 AWS S3 연동
 - 회원이 변경하는 이미지 파일을 AWS에 연동하여 S3에 저장하기로 했습니다.
 - 이미지 파일 저장 기능을 확인하기 위해 먼저 로컬에 이미지를 저장한 다음 나중에 AWS S3 연동으로 바꾸는 것을 고려해보았지만, 나중에 코드를 수정하는 것이 더 어려울 것 같아서 처음부터 S3에 연동하기로 했습니다.
 - AWS에 연동하는 방법은 여러가지 구현 방법이 있었지만, 제가 알고있는 DTO 와 Spring 3계층을 사용할 수 있도록 필요한 코드만을 남기고 설계하였습니다.
 - 결과적으로 아래와 같은 설계가 된다는 것을 이해하고 구현할 수 있었습니다.
 
-# 5. 문제 해결 경험
+## 5. 문제 해결 경험
 ### 이미지 전송 시 POST 500 에러
 - 프론트엔드의 formdata 의 데이터를 Dto로 전달하는 과정에서 에러가 발생했습니다.
 - 프론트엔드 콘솔 창을 확인했지만 POST 500 외에 별다른 메세지가 없어 서버를 수정하기로 했습니다.
