@@ -7,9 +7,9 @@
 - http://crackers.life
 
 ## 2. 사용 기술
-- Backend : Java 11 Spring Boot 2.6.9 Gradle 7.4.1 Thymeleaf Spring Data JPA Spring Security
-- Frontend : HTML JavaScript CSS JQuery
-- AWS : S3 EC2 Secret Manager CodeDeploy
+- Backend : Java 11 / Spring Boot 2.6.9 / Gradle 7.4.1 / Thymeleaf / Spring Data JPA / Spring Security
+- Frontend : HTML / JavaScript / CSS / JQuery
+- AWS : S3 / EC2 / Secret Manager / CodeDeploy
 - Database : AWS RDS MySQL 8.0.28
 - CI/CD : Github Action
 
