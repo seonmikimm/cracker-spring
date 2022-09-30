@@ -19,6 +19,7 @@
 - AWS S3 Service 를 통한 이미지 업로드 구현
 - 파일 경로(이미지 URL) DB 저장하여 관리
 - Dto를 활용하여 유지보수성 증가
+- XSS 보안을 위한 파일 입력 제한
 
 ## 4. 어려웠던 점
 ### 이미지 파일 전송 및 AWS S3 연동
@@ -51,7 +52,6 @@
 
 ## 6. 고객 피드백 반영
 ### 프로필 기능 피드백
-**반영한 피드백**
 <details>
 <summary>프로필 수정시에 기존의 입력 내용이 표시되어 있다면 좋겠습니다.</summary>
 <div markdown="1">
@@ -59,7 +59,6 @@
 </div>
 </details>
 
-**반영하지 못한 피드백**
 <details>
 <summary>이미지 업로드시 첨부되었다는 표시가 없음</summary>
 <div markdown="1">
@@ -81,4 +80,4 @@
 </div>
 </details>
 
-# 7. 회고
+[사용자 피드백 상세보기](https://goofy-draw-ced.notion.site/cfdfc381933a46ff91ceed1cafbfd1ab)
